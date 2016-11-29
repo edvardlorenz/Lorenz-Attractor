@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{836154FC-A52E-4325-B021-AE4FE3BF68E6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LorenzNew</RootNamespace>
+    <AssemblyName>LorenzNew</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lyapunov.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\About\About.csproj">
+      <Project>{D002413D-149F-4B48-8BF1-1F2A5DCB3F63}</Project>
+      <Name>About</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AKFGraph\AKFGraph.csproj">
+      <Project>{45FA57E8-8F7A-4DBB-8FFB-BAE6F3F62ECC}</Project>
+      <Name>AKFGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\calculate_attractor\calculate_attractor.csproj">
+      <Project>{AD162C3D-82E6-4323-A932-4ADA664E7924}</Project>
+      <Name>calculate_attractor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CorrDimension\CorrDimension.csproj">
+      <Project>{4C59BACD-7CF5-47F8-8835-F0E829F7D151}</Project>
+      <Name>CorrDimension</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Datalib\Datalib.csproj">
+      <Project>{921FBC3A-EC98-4242-A596-41552A74F4E1}</Project>
+      <Name>Datalib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Input\Input.csproj">
+      <Project>{A990DB4D-30A2-4C24-8EFB-6A8313489978}</Project>
+      <Name>Input</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PoincareGraph\PoincareGraph.csproj">
+      <Project>{A545E6B3-EEFE-4F22-949C-F123FC4FB7D8}</Project>
+      <Name>PoincareGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpectrumGraph\SpectrumGraph.csproj">
+      <Project>{26AF2988-5CA7-49D0-9E2A-31434EE5DB13}</Project>
+      <Name>SpectrumGraph</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TimeGraph\TimeGraph.csproj">
+      <Project>{A76035D8-9106-47A7-BA90-E622491DC5C9}</Project>
+      <Name>TimeGraph</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
