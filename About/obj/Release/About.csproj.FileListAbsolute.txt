@@ -1,0 +1,16 @@
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\bin\Release\About.dll
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\bin\Release\About.pdb
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.AboutForm.resources
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.Properties.Resources.resources
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\GenerateResource.read.1.tlog
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\GenerateResource.write.1.tlog
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.dll
+C:\Users\Татьяна\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.pdb
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\bin\Release\About.dll
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\bin\Release\About.pdb
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.AboutForm.resources
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.Properties.Resources.resources
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.csproj.GenerateResource.Cache
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.dll
+C:\Users\Bill Newman\Documents\Visual Studio 2010\Projects\LorenzNew\About\obj\Release\About.pdb
